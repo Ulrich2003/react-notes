@@ -9,7 +9,14 @@ redux原理图：
 
 1⃣️ 创建redux文件夹
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/92a5439477c844a0a02ba11c7109dbe2.png)
+**🧯警告🛠：**
+
+<font color=red size=4>❌修正错误：之前误将redux文件夹📁创建在components文件夹📁下，目前文章已经更正。但是后面的代码模板中所出现的：
+`import XXX from '../..../....'`
+导入路径可能有误，按您本地的路径为准。</font>
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/abafe160fc51460fac6d35f5525e6e8a.png)
+
 
 
 在redux文件夹📁里面创建以下几个文件📃：
@@ -92,7 +99,7 @@ export default createStore(myReducer)
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
-import store from "./components/redux/store";
+import store from "./redux/store";
 import App from "./App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
